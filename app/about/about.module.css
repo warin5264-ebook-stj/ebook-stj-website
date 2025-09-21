@@ -1,0 +1,49 @@
+/* app/about/about.module.css */
+.main {
+  background-color: #f9f9f9;
+}
+
+.hero {
+  background-color: #0070f3;
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.heroContent h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.heroContent p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contentSection {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.missionCard {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.teamSection h2, .missionCard h2 {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.teamSection p, .missionCard p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}

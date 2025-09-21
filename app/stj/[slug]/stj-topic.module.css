@@ -1,0 +1,39 @@
+/* app/stj/[slug]/stj-topic.module.css */
+.main {
+  padding: 4rem 2rem;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.breadcrumb {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+.title {
+  font-size: 3rem;
+  margin-top: 0;
+  line-height: 1.2;
+}
+.content {
+  margin-top: 3rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+.imageGallery {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column; /* ทำให้รูปเรียงจากบนลงล่าง */
+  gap: 2rem; /* ระยะห่างระหว่างรูป */
+}
+.imageContainer {
+  margin: 2rem 0;
+}
+
+.topicImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,51 @@
+/* components/HeroBanner.module.css */
+.bannerContainer {
+  position: relative;
+  width: 100%;
+  height: 400px; /* กำหนดความสูงของแบนเนอร์ */
+  overflow: hidden; /* ซ่อนส่วนเกินของรูปภาพ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem; /* <-- เพิ่มบรรทัดนี้ */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* เพิ่มโอเวอร์เลย์สีดำจางๆ */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.bannerTitle {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.bannerSubtitle {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive สำหรับมือถือ */
+@media (max-width: 768px) {
+  .bannerContainer {
+    height: 250px; /* ลดความสูงบนมือถือ */
+  }
+  .bannerTitle {
+    font-size: 2rem;
+  }
+  .bannerSubtitle {
+    font-size: 1rem;
+  }
+}

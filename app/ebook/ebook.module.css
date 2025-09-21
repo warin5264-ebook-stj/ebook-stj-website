@@ -1,0 +1,60 @@
+/* app/ebook/ebook.module.css */
+.main {
+  min-height: 80vh;
+}
+
+.titleSection {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.buttonGroup {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.primaryButton, .secondaryButton {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.primaryButton {
+  background-color: #0070f3;
+  color: white;
+}
+
+.primaryButton:hover {
+  background-color: #005bb5;
+  transform: translateY(-2px);
+}
+
+.secondaryButton {
+  background-color: transparent;
+  color: #0070f3;
+  border: 2px solid #0070f3;
+}
+
+.secondaryButton:hover {
+  background-color: #0070f3;
+  color: white;
+  transform: translateY(-2px);
+}

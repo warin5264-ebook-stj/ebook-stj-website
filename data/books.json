@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "slug": "learn-about-tb",
+    "title": "เรียนรู้เกี่ยวกับ วัณโรค",
+    "image": "/images/book-tb.png",
+    "tags": ["ยอดนิยม", "มาใหม่"],
+    "description": "หนังสือภาพสำหรับเด็กและเยาวชนเพื่อให้ความรู้เบื้องต้นเกี่ยวกับวัณโรค...",
+    "fullContent": "วัณโรคเป็นโรคติดต่อที่เกิดจากเชื้อแบคทีเรีย...",
+    "readOnlineUrl": "https://www.tbthailand.org/download/Manual/%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%9E%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A7%E0%B8%B1%E0%B8%93%E0%B9%82%E0%B8%A3%E0%B8%84_%E0%B9%84%E0%B8%97%E0%B8%A2(1).pdf",
+    "downloadPdfUrl": "http://googleusercontent.com/external/website-for-downloading"
+  },
+  {
+    "id": 2,
+    "slug": "health-notebook",
+    "title": "สมุดบันทึก สุขภาพ",
+    "image": "/images/book-health.png",
+    "tags": ["ยอดนิยม"],
+    "description": "สมุดบันทึกสุขภาพส่วนตัว ช่วยให้คุณติดตามการเปลี่ยนแปลงของร่างกาย...",
+    "fullContent": "การจดบันทึกสุขภาพเป็นประจำจะช่วยให้...",
+    "readOnlineUrl": "http://googleusercontent.com/another-external-link",
+    "downloadPdfUrl": "http://googleusercontent.com/another-download-link"
+  },
+  {
+    "id": 3,
+    "slug": "health-notebook",
+    "title": "สมุดบันทึก สุขภาพ",
+    "image": "/images/book-health.jpg",
+    "tags": ["ยอดนิยม"],
+    "description": "สมุดบันทึกสุขภาพส่วนตัว ช่วยให้คุณติดตามการเปลี่ยนแปลงของร่างกาย...",
+    "fullContent": "การจดบันทึกสุขภาพเป็นประจำจะช่วยให้...",
+    "readOnlineUrl": "http://googleusercontent.com/another-external-link",
+    "downloadPdfUrl": "http://googleusercontent.com/another-download-link"
+  },
+  {
+    "id": 4,
+    "slug": "health-notebook",
+    "title": "สมุดบันทึก สุขภาพ",
+    "image": "/images/book-health.jpg",
+    "tags": ["ยอดนิยม"],
+    "description": "สมุดบันทึกสุขภาพส่วนตัว ช่วยให้คุณติดตามการเปลี่ยนแปลงของร่างกาย...",
+    "fullContent": "การจดบันทึกสุขภาพเป็นประจำจะช่วยให้...",
+    "readOnlineUrl": "http://googleusercontent.com/another-external-link",
+    "downloadPdfUrl": "http://googleusercontent.com/another-download-link"
+  }
+]

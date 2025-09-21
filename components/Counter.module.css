@@ -1,0 +1,42 @@
+/* components/Counter.module.css */
+.counterSection {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 2rem;
+  background-color: #0070f3;
+  color: white;
+  text-align: center;
+}
+.stat h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.stat p {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+.downloadButton {
+  background-color: #ffffff;
+  color: #0070f3;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  align-self: center;
+}
+.downloadButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .counterSection {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

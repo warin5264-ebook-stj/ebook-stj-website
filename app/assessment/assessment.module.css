@@ -1,0 +1,153 @@
+/* app/assessment/assessment.module.css */
+.main {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+/* --- สไตล์สำหรับฟอร์มประเมิน --- */
+.assessmentForm {
+  border-top: 1px solid #eee;
+}
+
+.questionRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #eee;
+  flex-wrap: wrap; /* ทำให้ขึ้นบรรทัดใหม่บนจอเล็ก */
+}
+
+.questionText {
+  font-size: 1.1rem;
+  margin: 0;
+  flex-basis: 60%; /* ให้ข้อความกว้าง 60% */
+}
+
+.options {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.options label {
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.options input[type="radio"] {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/* --- สไตล์สำหรับปุ่มและผลลัพธ์ --- */
+.submitButton {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 0.2s ease;
+}
+
+.submitButton:hover {
+  background-color: #005bb5;
+}
+
+.resultBox {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.resultBox h2 {
+  margin-top: 0;
+}
+
+.risk {
+  background-color: #fffbe6; /* สีเหลืองอ่อน */
+  border: 1px solid #ffe58f;
+}
+
+.noRisk {
+  background-color: #f6ffed; /* สีเขียวอ่อน */
+  border: 1px solid #b7eb8f;
+}
+
+.recommendation {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #c0392b;
+}
+
+@media (max-width: 600px) {
+  .questionRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+.dateText {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.recommendation {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px dashed #ffd591;
+  text-align: left;
+}
+
+.symptomList {
+  list-style-type: '✓ '; /* เพิ่มเครื่องหมายถูกข้างหน้า */
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.symptomList li {
+  margin-bottom: 0.5rem;
+}
+
+.advice {
+  background-color: #ffe5e5;
+  border: 1px solid #ffb8b8;
+  color: #c0392b;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}

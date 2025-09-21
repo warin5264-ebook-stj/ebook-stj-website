@@ -1,0 +1,39 @@
+/* components/Footer.module.css */
+.footer {
+  padding: 4rem 2rem;
+  background-color: #1f2937; /* สีพื้นหลังเข้ม */
+  color: #d1d5db; /* สีตัวอักษรอ่อน */
+}
+
+.footerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  align-items: start;
+  align-items: center;
+}
+
+.info h4 {
+  font-size: 1.5rem;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.info p {
+  line-height: 1.6;
+}
+
+.facebookPlugin {
+  /* จัดให้ plugin อยู่ชิดขวาบนจอใหญ่ */
+  justify-self: end;
+}
+
+@media (max-width: 768px) {
+  .facebookPlugin {
+    /* บนจอเล็กให้มาอยู่ตรงกลาง */
+    justify-self: center;
+  }
+}

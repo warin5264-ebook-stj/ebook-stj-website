@@ -1,0 +1,128 @@
+/* src/components/Header.module.css */
+
+.header {
+  display: flex;
+  justify-content: space-between; /* จัดให้โลโก้กับเมนูอยู่คนละฝั่ง */
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav ul {
+  list-style: none; /* เอา bullet point ออก */
+  display: flex; /* ทำให้เมนูเรียงแนวนอน */
+  gap: 1.5rem; /* ระยะห่างระหว่างเมนู */
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  color: #555;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #0070f3; /* เปลี่ยนสีเมื่อเอาเมาส์ไปชี้ */
+}
+
+/* สร้างเส้นใต้เมื่อ hover */
+.navLink::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0070f3;
+  transition: width 0.3s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+/* --- Responsive Styles for Mobile --- */
+
+.hamburger {
+  display: none; /* 1. ซ่อนปุ่มนี้ในจอใหญ่ */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.bar {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: #333;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+/* Media Query: คำสั่งสำหรับจอที่ขนาดไม่เกิน 768px */
+@media (max-width: 768px) {
+  .nav {
+    position: fixed; /* 2. ทำให้เมนูเป็น pop-up */
+    top: 0;
+    right: -100%; /* 3. ซ่อนไว้นอกจอด้านขวา */
+    width: 60%;
+    height: 100vh;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    padding-top: 5rem;
+  }
+  
+  .navOpen {
+    right: 0; /* 4. เมื่อเมนูเปิด ให้เลื่อนกลับเข้ามาในจอ */
+  }
+
+  .navList {
+    flex-direction: column; /* 5. ทำให้เมนูเรียงเป็นแนวตั้ง */
+    align-items: center;
+    width: 100%;
+  }
+
+  .navLink {
+    font-size: 1.2rem;
+  }
+
+  .hamburger {
+    display: flex; /* 6. แสดงปุ่มแฮมเบอร์เกอร์ในจอมือถือ */
+  }
+  /* components/Header.module.css */
+.navContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* เพิ่มระยะห่างระหว่าง nav กับปุ่ม */
+}
+/* components/Header.module.css */
+/* ... (สไตล์เดิม) ... */
+
+
+
+.logoutButton:hover {
+  background-color: #d32f2f;
+}
+}

@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+/* ปรับสไตล์ slider */
+.slick-slide img {
+  border-radius: 12px;
+  object-fit: cover;
+  height: 400px;
+}
+
+.slick-dots li button:before {
+  color: #1d4ed8;
+}
+
+.slick-prev, .slick-next {
+  z-index: 10;
+  color: #28e687;
+}
