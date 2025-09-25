@@ -1,5 +1,6 @@
 // app/admin/dashboard/page.js
 "use client";
+"use client"; // <-- เพิ่มบรรทัดนี้เข้ามา
 
 import React from 'react';
 import GridLayout from 'react-grid-layout';
