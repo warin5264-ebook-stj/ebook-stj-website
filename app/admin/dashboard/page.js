@@ -1,6 +1,5 @@
 // app/admin/dashboard/page.js
 "use client";
-"use client"; // <-- เพิ่มบรรทัดนี้เข้ามา
 
 import React from 'react';
 import GridLayout from 'react-grid-layout';
@@ -17,15 +16,20 @@ import 'react-resizable/css/styles.css';
 const AdminDashboardPage = () => {
   // กำหนด Layout เริ่มต้น
   const initialLayout = [
-    // { i: 'key', x: ตำแหน่งแนวนอน, y: ตำแหน่งแนวตั้ง, w: ความกว้าง, h: ความสูง }
     { i: 'stat-new-patients', x: 0, y: 0, w: 4, h: 2 },
     { i: 'stat-success-rate', x: 4, y: 0, w: 4, h: 2 },
     { i: 'stat-deaths', x: 8, y: 0, w: 4, h: 2 },
     { i: 'chart-monthly', x: 0, y: 2, w: 12, h: 4 },
   ];
 
+  // 1. สร้างข้อมูลตัวอย่างสำหรับกราฟ
+  const mockChartData = {
+    title: "สถิติผู้ป่วยวัณโรครายใหม่ (ตัวอย่าง)",
+    labels: ['มิ.ย.', 'ก.ค.', 'ส.ค.', 'ก.ย.'],
+    data: [65, 59, 80, 81]
+  };
+
   const handleLayoutChange = (newLayout) => {
-    // ในอนาคต เราจะส่ง newLayout ไปบันทึกที่ API -> Vercel KV
     console.log("New Layout:", newLayout);
   };
 
@@ -40,8 +44,8 @@ const AdminDashboardPage = () => {
           <GridLayout
             className="layout"
             layout={initialLayout}
-            cols={12} // แบ่ง Grid ทั้งหมดเป็น 12 คอลัมน์
-            rowHeight={100} // แต่ละแถวสูง 100px
+            cols={12}
+            rowHeight={100}
             width={1200}
             onLayoutChange={handleLayoutChange}
           >
@@ -55,7 +59,8 @@ const AdminDashboardPage = () => {
               <StatCard title="เสียชีวิต (สะสมปีนี้)" value="56" unit="คน" />
             </div>
             <div key="chart-monthly" className={styles.widget}>
-              <BarChart />
+              {/* 2. ส่งข้อมูลตัวอย่างเข้าไปใน BarChart Component */}
+              <BarChart chartData={mockChartData} />
             </div>
           </GridLayout>
         </div>
