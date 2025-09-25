@@ -18,29 +18,7 @@
     "tags": ["ยอดนิยม"],
     "description": "สมุดบันทึกสุขภาพส่วนตัว ช่วยให้คุณติดตามการเปลี่ยนแปลงของร่างกาย...",
     "fullContent": "การจดบันทึกสุขภาพเป็นประจำจะช่วยให้...",
-    "readOnlineUrl": "http://googleusercontent.com/another-external-link",
-    "downloadPdfUrl": "http://googleusercontent.com/another-download-link"
-  },
-  {
-    "id": 3,
-    "slug": "health-notebook",
-    "title": "สมุดบันทึก สุขภาพ",
-    "image": "/images/book-health.jpg",
-    "tags": ["ยอดนิยม"],
-    "description": "สมุดบันทึกสุขภาพส่วนตัว ช่วยให้คุณติดตามการเปลี่ยนแปลงของร่างกาย...",
-    "fullContent": "การจดบันทึกสุขภาพเป็นประจำจะช่วยให้...",
-    "readOnlineUrl": "http://googleusercontent.com/another-external-link",
-    "downloadPdfUrl": "http://googleusercontent.com/another-download-link"
-  },
-  {
-    "id": 4,
-    "slug": "health-notebook",
-    "title": "สมุดบันทึก สุขภาพ",
-    "image": "/images/book-health.jpg",
-    "tags": ["ยอดนิยม"],
-    "description": "สมุดบันทึกสุขภาพส่วนตัว ช่วยให้คุณติดตามการเปลี่ยนแปลงของร่างกาย...",
-    "fullContent": "การจดบันทึกสุขภาพเป็นประจำจะช่วยให้...",
-    "readOnlineUrl": "http://googleusercontent.com/another-external-link",
+    "readOnlineUrl": "https://www.tbthailand.org/download/Manual/%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%94%E0%B8%9A%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B6%E0%B8%81%E0%B8%AA%E0%B8%B8%E0%B8%82%E0%B8%A0%E0%B8%B2%E0%B8%9E%202566.pdf",
     "downloadPdfUrl": "http://googleusercontent.com/another-download-link"
   }
 ]

@@ -20,13 +20,17 @@
 }
 
 .bookCard {
-  background-color: #fff;
+   background-color: #fff;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  display: flex; /* ทำให้ cardBody ยืดได้ */
+  display: flex;
   flex-direction: column;
+  
+  /* --- เพิ่ม 2 บรรทัดนี้ --- */
+  max-width: 300px; /* กำหนดความกว้างสูงสุดของการ์ด */
+  margin: 0 auto;  /* จัดให้การ์ดอยู่ตรงกลางพื้นที่ Grid ของมัน */
 }
 
 .bookCard:hover {

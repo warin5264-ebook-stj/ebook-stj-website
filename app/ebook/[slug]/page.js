@@ -58,14 +58,14 @@ export default function BookDetailPage({ params }) {
               >
                 อ่านเลย
               </a>
-              <a 
+              {/* <a 
                 href={book.downloadPdfUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className={styles.secondaryButton}
               >
                 ดาวน์โหลด PDF ตรงนี้
-              </a>
+              </a> */}
             </div>
             {/* ในอนาคตสามารถเพิ่มปุ่มดาวน์โหลดตรงนี้ได้ */}
             {/* <button className={styles.downloadButton}>ดาวน์โหลด PDF</button> */}

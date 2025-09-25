@@ -9,7 +9,7 @@ const HeroBanner = () => {
         src="/images/hero-banner.png" // เปลี่ยนเป็นชื่อไฟล์รูปของคุณ
         alt="Banner Image"
         fill // ทำให้รูปภาพเติมเต็มพื้นที่ของ Container
-        style={{ objectFit: 'cover' }} // ทำให้รูปภาพปรับขนาดแบบ Cover
+        style={{ objectFit: 'center' }} // ทำให้รูปภาพปรับขนาดแบบ Center
         priority // ให้โหลดรูปภาพนี้เป็นอันดับแรกๆ
       />
       {/* <div className={styles.overlay}>

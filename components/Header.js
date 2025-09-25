@@ -7,11 +7,13 @@ import styles from './Header.module.css';
 
 const navLinks = [
   { href: '/', label: 'หน้าแรก' },
-  { href: '/stj', label: 'STJ Model' },
+  { href: '/stj', label: 'STJ TB Model' },
   { href: '/ebook', label: 'E-Book' },
-  { href: '/situation', label: 'สถานการณ์' }, // <-- เพิ่มบรรทัดนี้
+  { href: '/situation', label: 'สถานการณ์' },
+  { href: '/assessment', label: 'แบบประเมินความเสี่ยงวัณโรค' }, // <-- เพิ่มบรรทัดนี้
   { href: '/about', label: 'เกี่ยวกับเรา' },
-  { href: '/contact', label: 'ติดต่อเรา' },
+  
+  // { href: '/contact', label: 'ติดต่อเรา' },
 ];
 
 const Header = () => {
@@ -24,7 +26,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <Link href="/">E-Book STJ Model</Link>
+        <Link href="/">E-Book STJ TB Model</Link>
       </div>
       <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
         <ul className={styles.navList}>
