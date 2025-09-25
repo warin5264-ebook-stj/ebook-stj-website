@@ -37,3 +37,15 @@
     justify-self: center;
   }
 }
+/* --- เพิ่มโค้ดส่วนนี้เข้าไปท้ายไฟล์ --- */
+.visitorCounter {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #4b5563; /* เส้นคั่นบางๆ */
+}
+
+.visitorCounter p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #9ca3af; /* สีเทาจางๆ */
+}

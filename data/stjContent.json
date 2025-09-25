@@ -6,8 +6,7 @@
         "slug": "what-is-tb",
         "title": "วัณโรค คืออะไร",
         "images": [ 
-          "/images/stj/what-is-tb1.png",
-          "/images/stj/what-is-tb2.png"
+          "/images/stj/what-is-tb1.png"
         ],
         "content": [
           "วัณโรค (Tuberculosis หรือ TB) เป็นโรคติดต่อที่เกิดจากเชื้อแบคทีเรียชื่อ 'ไมโคแบคทีเรียม ทูเบอร์คูโลซิส' (Mycobacterium tuberculosis) ซึ่งสามารถเกิดขึ้นได้กับทุกอวัยวะของร่างกาย แต่ส่วนใหญ่มักเกิดที่ปอด (วัณโรคปอด)",
@@ -18,8 +17,7 @@
       { "slug": "how-tb-spreads",
         "title": "วัณโรค ติดต่อได้อย่างไร",
         "images": [ 
-          "/images/stj/how-tb-spreads1.png",
-          "/images/stj/how-tb-spreads2.png"
+          "/images/stj/how-tb-spreads1.png"
         ],
         "content": [
           "วัณโรคสามารถติดต่อได้จากการหายใจเอาเชื้อแบคทีเรียที่อยู่ในอากาศเข้าไป เมื่อผู้ป่วยวัณโรคไอ จาม หรือพูดคุย เชื้อจะลอยอยู่ในอากาศและสามารถติดเชื้อได้"
@@ -103,10 +101,7 @@
       { "slug": "community-care",
        "title": "การดูแลและควบคุมวัณโรคในชุมชน",
         "images": [ 
-          "/images/stj/community-care1.png",
-          "/images/stj/community-care2.png",
-          "/images/stj/community-care3.png",
-          "/images/stj/community-care4.png"
+          "/images/stj/community-care1.png"
         ],
        "content": [
          "การดูแลและควบคุมวัณโรคในชุมชนเป็นสิ่งสำคัญเพื่อป้องกันการแพร่ระบาดของโรค ควรมีการให้ความรู้เกี่ยวกับวัณโรคแก่ประชาชน การส่งเสริมการตรวจคัดกรองในกลุ่มเสี่ยง และการสนับสนุนผู้ป่วยในการรักษาอย่างต่อเนื่อง",

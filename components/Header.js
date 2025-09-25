@@ -9,6 +9,7 @@ const navLinks = [
   { href: '/', label: 'หน้าแรก' },
   { href: '/stj', label: 'STJ Model' },
   { href: '/ebook', label: 'E-Book' },
+  { href: '/situation', label: 'สถานการณ์' }, // <-- เพิ่มบรรทัดนี้
   { href: '/about', label: 'เกี่ยวกับเรา' },
   { href: '/contact', label: 'ติดต่อเรา' },
 ];

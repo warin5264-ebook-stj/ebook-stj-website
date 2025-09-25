@@ -1,0 +1,68 @@
+/* app/situation/situation.module.css */
+.main {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  min-height: 80vh;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #333;
+}
+
+.updateInfo {
+  text-align: center;
+  color: #666;
+  margin-top: -1rem;
+  margin-bottom: 3rem;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.statCard {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.statCard h2 {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.statCard p {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0070f3;
+  margin: 0;
+}
+
+.content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+}
+/* app/situation/situation.module.css */
+/* ... (โค้ดเดิม) ... */
+
+.chartContainer {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}

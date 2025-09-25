@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import styles from "./assessment.module.css";
+import NextImage from 'next/image'; // เปลี่ยนชื่อเป็น NextImage
 
 const questions = [
   { id: 1, text: 'ไอทุกวันเกิน 2 สัปดาห์', score: 3 },
@@ -98,7 +99,16 @@ export default function AssessmentPage() {
               <p className={styles.dateText}>วันที่ประเมิน: {assessmentDate}</p>
               <p>คะแนนรวมของคุณคือ: <strong>{totalScore}</strong> คะแนน</p>
               <p>ผลลัพธ์: <strong>{result}</strong></p>
-
+              <strong>หากคุณอยู่ในกลุ่มเสี่ยงเหล่านนี้  คุณควร ตรวจเอกซเรย์ปอด เพื่อคนหาวัณโรค อย่างน้อยปีละ 1 ครั้ง</strong><br />
+               <div className={styles.imageContainer}>
+                  <NextImage
+                    src="/images/stj/risk-groups.png" // เปลี่ยนเป็นชื่อไฟล์รูปของคุณ
+                    alt="ข้อมูลเพิ่มเติมเกี่ยวกับการตรวจวัณโรค"
+                    width={700} // กำหนดความกว้างต้นฉบับ
+                    height={400} // กำหนดความสูงต้นฉบับ
+                    style={{ width: '100%', height: 'auto', borderRadius: '8px', marginTop: '1rem' }}
+                  />
+                </div>
               {/* เงื่อนไข: ถ้าคะแนน >= 3 ให้แสดงส่วนนี้ */}
               {totalScore >= 3 && (
                 <div className={styles.recommendation}>
@@ -109,7 +119,9 @@ export default function AssessmentPage() {
                     ))}
                   </ul>
                   <p className={styles.advice}>
+                    <strong>รีบไปตรวจหาวัณโรค ให้เร็วที่สุด ณ โรงพยาบาลใกล้บ้าน</strong><br />
                     <strong>แนะนำให้บันทึกภาพหน้าจอนี้ และไปพบแพทย์เพื่อรับการตรวจวินิจฉัยโดยละเอียด</strong>
+                    
                   </p>
                 </div>
               )}

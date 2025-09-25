@@ -7,7 +7,7 @@ import styles from './ButtonGrid.module.css';
 const allButtons = [
   { id: 1, image: '/images/btn-stj.png', href: '/stj' },
   { id: 2, image: '/images/btn-ebook.png', href: '/ebook' },
-  { id: 3, image: '/images/btn-assessment.png', href: '/assessment' },
+  { id: 3, image: '/images/btn-situation.png', href: '/situation' },
   { id: 4, image: '/images/btn4.jpg', href: '/contact' },
   { id: 5, image: '/images/btn5.jpg', href: '/link5' },
   { id: 6, image: '/images/btn6.jpg', href: '/link6' },

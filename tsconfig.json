@@ -18,10 +18,11 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".", // <-- เพิ่ม/ตรวจสอบว่ามีบรรทัดนี้
     "paths": {
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/page.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/page.js", "app/layout.js"],
   "exclude": ["node_modules"]
 }
