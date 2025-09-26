@@ -1,47 +1,44 @@
 // app/api/dashboard/route.js
 import { kv } from '@vercel/kv';
 import { NextResponse } from 'next/server';
-import fs from 'fs'; // 1. Import 'fs' สำหรับอ่านไฟล์
-import path from 'path'; // 2. Import 'path' สำหรับสร้างที่อยู่ไฟล์
+import fs from 'fs';
+import path from 'path';
 
-export const revalidate = 0;
+export const revalidate = 0; // ป้องกันการ Cache
 
-// ฟังก์ชันสำหรับอ่านข้อมูลเริ่มต้นจากไฟล์ JSON
+// ฟังก์ชันสำหรับอ่านข้อมูลเริ่มต้นจากไฟล์ dashboards.json
 function getInitialData() {
-  // 3. สร้าง path ที่ถูกต้องไปยังไฟล์ data/dashboardData.json
-  const filePath = path.join(process.cwd(), 'data', 'dashboardData.json');
-  // 4. อ่านไฟล์ขึ้นมา
+  const filePath = path.join(process.cwd(), 'data', 'dashboards.json');
   const fileContent = fs.readFileSync(filePath, 'utf8');
-  // 5. แปลงข้อความ JSON ให้เป็น Object
   const data = JSON.parse(fileContent);
   return data;
 }
 
+// --- ฟังก์ชัน GET: สำหรับดึงข้อมูลไปแสดง ---
 export async function GET() {
   try {
-    const data = await kv.get('dashboard_data');
+    const data = await kv.get('dashboards_data'); // เปลี่ยน key เป็น dashboards_data
 
     if (!data) {
-      // 6. ถ้าไม่มีข้อมูลใน KV ให้เรียกใช้ฟังก์ชันเพื่ออ่านจากไฟล์
       const initialData = getInitialData();
       return NextResponse.json(initialData);
     }
     
     return NextResponse.json(data);
   } catch (error) {
-    console.error('Failed to get dashboard data:', error);
+    console.error('Failed to get dashboards data:', error);
     return NextResponse.json({ error: 'Failed to fetch data' }, { status: 500 });
   }
 }
 
-// ... ฟังก์ชัน POST เหมือนเดิม ...
+// --- ฟังก์ชัน POST: สำหรับรับข้อมูลใหม่มาบันทึก ---
 export async function POST(request) {
   try {
     const newData = await request.json();
-    await kv.set('dashboard_data', newData);
+    await kv.set('dashboards_data', newData); // เปลี่ยน key เป็น dashboards_data
     return NextResponse.json({ message: 'Dashboard data updated successfully' });
   } catch (error) {
-    console.error('Failed to update dashboard data:', error);
+    console.error('Failed to update dashboards data:', error);
     return NextResponse.json({ error: 'Failed to update data' }, { status: 500 });
   }
 }

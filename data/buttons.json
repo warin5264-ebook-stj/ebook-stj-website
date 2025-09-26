@@ -1,0 +1,52 @@
+[
+    { 
+    "id": 2, 
+    "image": "/images/btn-stj.png", 
+    "href": "/stj",
+    "title": "ทำความรู้จักกับ STJ TB Model",
+    "tags": ["ค้นหา/รักษา/ดูแล"]
+  },
+  { 
+    "id": 1, 
+    "image": "/images/btn-ebook.png", 
+    "href": "/ebook",
+    "title": "E-BOOK หนังสือเกี่ยวกับวัณโรค",
+    "tags": ["อ่านฟรี", "ความรู้"]
+  },
+  
+  { 
+    "id": 3, 
+    "image": "/images/btn-situation.png", 
+    "href": "/situation",
+    "title": "สถานการณ์วัณโรค",
+    "tags": ["ข้อมูล"]
+  },
+  {
+    "id": 18, 
+    "image": "/images/new-btn-s.png", 
+    "href": "/stj/s",
+    "title": "S - Screening",
+    "tags": ["การค้นหา"]
+  },
+  { 
+    "id": 19, 
+    "image": "/images/new-btn-t.png", 
+    "href": "/stj/t",
+    "title": "T - Treatment",
+    "tags": ["การรักษา"]
+  },
+  { 
+    "id": 20, 
+    "image": "/images/new-btn-j.png", 
+    "href": "/stj/j",
+    "title": "J - Join Team",
+    "tags": ["การดูแลในชุมชน"]
+  },
+  {
+  "id": 100,
+  "image": "/images/long-btn-assessment.png",
+  "href": "/assessment",
+  "title": "แบบประเมินความเสี่ยงวัณโรค",
+  "tags": ["ประเมินด้วยตนเอง", "สำคัญ"]
+}
+]

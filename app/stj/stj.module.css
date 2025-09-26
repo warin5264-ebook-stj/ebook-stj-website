@@ -121,3 +121,13 @@
   background-color: #f0f7ff;
   color: #0070f3;
 }
+.shortcutSection {
+  text-align: center;
+  margin-bottom: 4rem; /* เพิ่มระยะห่างก่อนถึงส่วนสารบัญ */
+}
+
+.shortcutTitle {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2.5rem; /* ระยะห่างระหว่างหัวข้อกับปุ่ม */
+}

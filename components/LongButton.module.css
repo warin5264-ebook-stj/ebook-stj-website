@@ -1,29 +1,52 @@
 /* components/LongButton.module.css */
 .container {
-  padding: 0 2rem 3rem 2rem; /* ระยะห่างบน 0, ข้างๆ 2rem, ล่าง 3rem */
+  padding: 0 2rem 3rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 3rem; /* <-- เพิ่มบรรทัดนี้ */
+  margin-top: 3rem; /* <-- แก้เป็นค่าบวกเพื่อสร้างระยะห่าง */
 }
 
-.buttonLink {
-  position: relative;
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 4; /* สัดส่วนแนวนอน */
+.buttonCard {
+  background-color: #fff;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.buttonLink:hover {
-  transform: scale(1.02);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+.buttonCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 768px) {
-  .buttonLink {
-    aspect-ratio: 16 / 6;
-  }
+.imageContainer {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 1;
+}
+
+.textContainer {
+  padding: 1rem 1.5rem;
+}
+
+.buttonTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.buttonTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  background-color: #f0f0f0;
+  color: #555;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
 }

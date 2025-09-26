@@ -1,0 +1,56 @@
+/* app/situation/[slug]/dashboard-display.module.css */
+.main { 
+  padding: 4rem 2rem; 
+  background-color: #f9f9f9; 
+}
+
+.container { 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.mainTitle {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #555;
+  margin-top: -1rem;
+  margin-bottom: 3rem;
+}
+
+.tableContainer { 
+  overflow-x: auto;
+}
+
+.dataTable { 
+  width: 100%; 
+  border-collapse: collapse; 
+  font-size: 1rem;
+}
+
+.dataTable th, .dataTable td { 
+  border-bottom: 1px solid #eee; 
+  padding: 1rem; 
+  text-align: left; 
+}
+
+.dataTable th { 
+  font-weight: 600; 
+  background-color: #fafafa;
+}
+
+.dataTable tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.dataTable tbody tr:hover {
+  background-color: #f0f7ff;
+}

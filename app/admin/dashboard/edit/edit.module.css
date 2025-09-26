@@ -1,20 +1,59 @@
-/* app/admin/dashboard/edit/edit.module.css */
+/* app/admin/dashboard/edit/edit.module.css (เวอร์ชันปรับปรุง) */
 .main {
   padding: 2rem;
-  background-color: #f0f2f5; /* เปลี่ยนสีพื้นหลังให้ดูเหมือนหลังบ้าน */
+  background-color: #f0f2f5;
   min-height: 80vh;
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .container h1 {
   font-size: 2rem;
   margin-bottom: 2rem;
+  color: #1f2937;
 }
 
+/* --- สไตล์สำหรับ Tabs --- */
+.tabs {
+  margin-bottom: 2rem;
+}
+
+.tabs :global(.react-tabs__tab-list) {
+  border-bottom: 2px solid #dfe4ea;
+  margin: 0;
+}
+
+.tabs :global(.react-tabs__tab) {
+  border: none;
+  border-bottom: 3px solid transparent;
+  bottom: -2px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.tabs :global(.react-tabs__tab--selected) {
+  background: none;
+  border-color: #0070f3;
+  color: #0070f3;
+}
+
+.tabs :global(.react-tabs__tab:focus) {
+  box-shadow: none;
+  outline: none;
+}
+
+.tabs :global(.react-tabs__tab-panel--selected) {
+  padding-top: 2rem;
+}
+
+
+/* --- สไตล์สำหรับ Form & Fieldset --- */
 .fieldset {
   background-color: #ffffff;
   border: 1px solid #dfe4ea;
@@ -61,32 +100,73 @@
   box-shadow: 0 0 0 3px rgba(0, 112, 243, 0.2);
 }
 
-.formGroup textarea {
-  min-height: 100px;
-  resize: vertical;
+/* --- สไตล์สำหรับตาราง --- */
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.dataTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dataTable th,
+.dataTable td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.dataTable th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.dataTable input {
+  width: 100%;
+  border: none;
+  padding: 0.5rem;
+  background-color: transparent;
+  font-size: 0.95rem;
+  border-radius: 4px;
+}
+
+.dataTable input:focus {
+  outline: 2px solid #0070f3;
+  background-color: #f0f7ff;
+}
+
+/* --- สไตล์สำหรับปุ่ม --- */
+.addButton, .deleteButton, .saveButton {
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.addButton:hover, .deleteButton:hover, .saveButton:hover {
+  opacity: 0.85;
+}
+
+.addButton {
+  margin-top: 1rem;
+  background-color: #0070f3;
+  color: white;
+}
+
+.deleteButton {
+  background-color: #e53935;
+  color: white;
 }
 
 .saveButton {
+  margin-top: 1rem;
   background-color: #28a745;
   color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.saveButton:hover {
-  background-color: #218838;
-}
-
-.message {
-  margin-top: 1rem;
-  padding: 0.75rem;
-  border-radius: 6px;
-  background-color: #e0f2f1;
-  color: #00796b;
-  border: 1px solid #b2dfdb;
+  font-size: 1.1rem;
+  padding: 0.75rem 2rem;
 }

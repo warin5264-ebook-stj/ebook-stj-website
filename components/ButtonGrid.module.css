@@ -1,33 +1,93 @@
 /* components/ButtonGrid.module.css */
 .gridContainer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
   padding: 3rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  
+  margin-top: -3rem;
 }
 
-.buttonLink {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 1 / 1;
+.buttonCard {
+  background-color: #fff;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.buttonCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* <-- แก้ไขตรงนี้ให้เป็น 1 / 1 (สี่เหลี่ยมจัตุรัส) */
   display: block;
 }
 
-.buttonLink:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+.textContainer {
+  padding: 1rem;
+}
+
+.buttonTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.buttonTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  background-color: #f0f0f0;
+  color: #555;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
 }
 
 @media (max-width: 768px) {
   .gridContainer {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    grid-template-columns: 1fr;
+    max-width: 400px;
   }
+}
+.buttonTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  color: #555;
+  padding: 5px 12px; /* เพิ่ม padding เล็กน้อย */
+  border-radius: 20px;
+  font-size: 0.85rem; /* <-- ปรับขนาดตัวหนังสือที่นี่ */
+  font-weight: 500; /* เพิ่มความหนาเล็กน้อย */
+}
+
+/* --- เพิ่มสีสำหรับแต่ละ Tag --- */
+.tag.อ่านฟรี {
+  background-color: #53e47c; /* สีเขียวมิ้นท์ */
+  color: #00796b;
+}
+.tag.ความรู้ {
+  background-color: #22e318; /* สีฟ้าอ่อน */
+  color: #1e88e5;
+}
+.tag.ค้นหารักษาดูแล { /* CSS Class จะแปลง 'ค้นหา/รักษา/ดูแล' เป็น 'ค้นหารักษาดูแล' */
+  background-color: #ede7f6; /* สีม่วงอ่อน */
+  color: #5e35b1;
+}
+.tag.ประเมินด้วยตนเอง {
+  background-color: #fff3e0; /* สีส้มอ่อน */
+  color: #f57c00;
 }

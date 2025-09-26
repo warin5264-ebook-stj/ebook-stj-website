@@ -29,8 +29,8 @@ const Footer = () => {
       <div className={styles.footerContent}>
         <div className={styles.info}>
           <h4>E-Book STJ TB Model</h4>
-          <p>โครงการเฝ้าระวัง ป้องกัน และควบคุมวัณโรค</p>
-          <p>© {currentYear} สำนักงานสาธารณสุขจังหวัด (สสจ.)</p>
+          <p>กลุ่มงานควบคุมโรคติดต่อ </p>
+          <p>© {currentYear} สำนักงานสาธารณสุขจังหวัดอุบลราชธานีฯ (สสจ.)</p>
           
           <div className={styles.visitorCounter}>
             <p>จำนวนผู้เข้าชมเว็บไซต์: {visitorCount > 0 ? visitorCount.toLocaleString() : '...'}</p>

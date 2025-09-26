@@ -1,0 +1,72 @@
+/* app/stj/[slug]/stj-dynamic-page.module.css */
+
+.main { padding: 4rem 2rem; }
+.container { max-width: 900px; margin: 0 auto; }
+
+/* --- สไตล์สำหรับหน้าสารบัญ --- */
+.category {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+.category h2 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+.category ul { list-style: none; padding: 0; }
+.category li a {
+  display: block;
+  padding: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  transition: background-color 0.2s;
+}
+.category ul { list-style: none; padding: 0; }
+
+/* --- โค้ดที่แก้ไข --- */
+.category li a {
+  display: flex; /* 1. จัด Layout ด้วย Flexbox */
+  justify-content: space-between; /* ทำให้ข้อความกับไอคอนแยกกัน */
+  align-items: center;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #f0f0f0; /* เพิ่มเส้นคั่นบางๆ */
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+/* 2. เพิ่มไอคอนลูกศร (›) ด้านหลัง */
+.category li a::after {
+  content: '›';
+  font-size: 2rem;
+  color: #57c57f;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* เอฟเฟกต์สำหรับ Desktop Hover */
+.category li a:hover {
+  background-color: #f0f7ff;
+  color: #0070f3;
+}
+.category li a:hover::after {
+  transform: translateX(5px);
+  color: #0070f3;
+}
+
+/* 3. เอฟเฟกต์สำหรับ Mobile Tap (Active State) */
+.category li a:active {
+  background-color: #e0f0ff;
+}
+
+/* ลบเส้นคั่นของรายการสุดท้ายออก */
+.category li:last-child a {
+  border-bottom: none;
+}
