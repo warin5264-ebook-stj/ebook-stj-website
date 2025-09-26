@@ -2,7 +2,6 @@
 .main {
   padding: 4rem 2rem;
   background-color: #f9f9f9;
-  min-height: 80vh;
 }
 
 .container {
@@ -11,7 +10,7 @@
   background-color: #ffffff;
   padding: 3rem;
   border-radius: 10px;
-  box-shadow: 0 4px M(0, 0, 0, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .title {
@@ -28,7 +27,7 @@
   margin-bottom: 3rem;
 }
 
-/* --- ดีไซน์ใหม่สำหรับฟอร์ม --- */
+/* --- สไตล์สำหรับฟอร์มประเมิน --- */
 .assessmentForm {
   border-top: 1px solid #eee;
 }
@@ -39,76 +38,47 @@
   align-items: center;
   padding: 1.5rem 0;
   border-bottom: 1px solid #eee;
-  flex-wrap: wrap;
-  gap: 1rem;
+  flex-wrap: wrap; /* ทำให้ขึ้นบรรทัดใหม่บนจอเล็ก */
 }
 
 .questionText {
   font-size: 1.1rem;
   margin: 0;
-  flex: 1; /* ทำให้ข้อความยืดเต็มที่ */
-  min-width: 250px; /* ความกว้างขั้นต่ำของข้อความ */
+  flex-basis: 60%; /* ให้ข้อความกว้าง 60% */
 }
 
-/* --- ดีไซน์ใหม่สำหรับปุ่ม Radio --- */
 .options {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .options label {
-  display: inline-block;
-  padding: 0.75rem 1.25rem;
-  border: 2px solid #dfe4ea;
-  border-radius: 8px;
+  font-size: 1rem;
   cursor: pointer;
-  transition: all 0.2s ease;
-  font-weight: 500;
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
 .options input[type="radio"] {
-  display: none; /* ซ่อนปุ่ม radio เดิม */
+  width: 1.2rem;
+  height: 1.2rem;
 }
 
-/* สไตล์เมื่อยังไม่ได้เลือก */
-.options input[type="radio"] + span {
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  border: 2px solid #ccc;
-  border-radius: 50%;
-  transition: all 0.2s ease;
-}
-
-/* สไตล์เมื่อถูกเลือก */
-.options input[type="radio"]:checked + span {
-  background-color: #0070f3;
-  border-color: #0070f3;
-  box-shadow: inset 0 0 0 3px white;
-}
-
-.options input[type="radio"]:checked + label {
-  background-color: #f0f7ff;
-  border-color: #0070f3;
-  color: #0070f3;
-}
-
-/* --- สไตล์ปุ่มและผลลัพธ์ --- */
+/* --- สไตล์สำหรับปุ่มและผลลัพธ์ --- */
 .submitButton {
   background-color: #0070f3;
   color: white;
   border: none;
-  padding: 1rem 2.5rem;
+  padding: 0.75rem 2rem;
   border-radius: 8px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
   cursor: pointer;
-  margin-top: 3rem;
+  margin-top: 2rem;
   display: block;
-  width: 100%; /* ทำให้ปุ่มเต็มความกว้าง */
+  margin-left: auto;
+  margin-right: auto;
   transition: background-color 0.2s ease;
 }
 
@@ -117,42 +87,67 @@
 }
 
 .resultBox {
-  margin-top: 3rem;
-  padding: 2rem;
-  border-radius: 10px;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
   text-align: center;
 }
 
 .resultBox h2 {
   margin-top: 0;
-  font-size: 2rem;
 }
 
 .risk {
-  background-color: #fffbe6;
+  background-color: #fffbe6; /* สีเหลืองอ่อน */
   border: 1px solid #ffe58f;
-  color: #d46b08;
 }
 
 .noRisk {
-  background-color: #f6ffed;
+  background-color: #f6ffed; /* สีเขียวอ่อน */
   border: 1px solid #b7eb8f;
-  color: #389e0d;
 }
 
-/* ... สไตล์ส่วนที่เหลือเหมือนเดิม ... */
-.importantAdviceBox {
-  border: 2px solid #ff4d4f; /* สีแดง */
-  background-color: #fff1f0; /* สีพื้นหลังแดงอ่อน */
-  padding: 1.5rem;
-  border-radius: 8px;
-  margin-top: 1.5rem; /* ระยะห่างด้านบน */
+.recommendation {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #c0392b;
+}
+
+@media (max-width: 600px) {
+  .questionRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+.dateText {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.recommendation {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px dashed #ffd591;
+  text-align: left;
+}
+
+.symptomList {
+  list-style-type: '✓ '; /* เพิ่มเครื่องหมายถูกข้างหน้า */
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.symptomList li {
+  margin-bottom: 0.5rem;
+}
+
+.advice {
+  background-color: #ffe5e5;
+  border: 1px solid #ffb8b8;
+  color: #c0392b;
+  padding: 1rem;
+  border-radius: 5px;
   text-align: center;
-}
-
-.importantAdviceBox p {
-  margin: 0;
-  font-size: 1.1rem;
-  color: #cf1322; /* สีข้อความแดงเข้ม */
-  line-height: 1.6;
 }

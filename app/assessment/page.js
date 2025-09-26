@@ -63,15 +63,10 @@ export default function AssessmentPage() {
                 <p className={styles.questionText}>{q.id}. {q.text}</p>
                 <div className={styles.options}>
                   <label>
-                    <input type="radio" name={`question-${q.id}`} onChange={() => handleAnswerChange(q.id, q.score)} />
-                    <span></span>
-                     มี ({q.score} คะแนน)
-                    
+                    <input type="radio" name={`question-${q.id}`} onChange={() => handleAnswerChange(q.id, q.score)} /> มี ({q.score} คะแนน)
                   </label>
                   <label>
-                    <input type="radio" name={`question-${q.id}`} onChange={() => handleAnswerChange(q.id, 0)} defaultChecked />
-                    <span></span>
-                     ไม่มี (0 คะแนน)
+                    <input type="radio" name={`question-${q.id}`} onChange={() => handleAnswerChange(q.id, 0)} defaultChecked /> ไม่มี (0 คะแนน)
                   </label>
                 </div>
               </div>
@@ -86,7 +81,7 @@ export default function AssessmentPage() {
             <div className={`${styles.resultBox} ${result === 'มีความเสี่ยงสูงมาก' ? styles.risk : styles.noRisk}`}>
               <h2>ผลการประเมิน</h2>
               <p className={styles.dateText}>วันที่ประเมิน: {assessmentDate}</p>
-              <p>คะแนนรวมของคุณคือ: <strong><br></br><h2>{totalScore}</h2> คะแนน</strong></p>
+              <p>คะแนนรวมของคุณคือ: <strong><h1>{totalScore}</h1></strong> คะแนน</p>
               <p>ผลลัพธ์: <strong>{result}</strong></p>
               
               {/* --- ส่วนที่แก้ไขคือตรงนี้ --- */}
@@ -115,12 +110,9 @@ export default function AssessmentPage() {
                       <li key={q.id}>{q.text}</li>
                     ))}
                   </ul>
-                  {/* --- ส่วนที่แก้ไข: ใส่ div ครอบคำแนะนำสำคัญ --- */}
-                  <div className={styles.importantAdviceBox}>
-                    <p>
-                      <strong>แนะนำให้บันทึกภาพหน้าจอนี้ และไปพบแพทย์เพื่อรับการตรวจวินิจฉัยโดยละเอียด ณ โรงพยาบาลใกล้บ้าน</strong>
-                    </p>
-                  </div>
+                  <p className={styles.advice}>
+                    <strong>แนะนำให้บันทึกภาพหน้าจอนี้ และไปพบแพทย์เพื่อรับการตรวจวินิจฉัยโดยละเอียด ณ โรงพยาบาลใกล้บ้าน</strong>
+                  </p>
                 </div>
               )}
             </div>
