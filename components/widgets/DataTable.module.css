@@ -1,0 +1,31 @@
+/* components/widgets/DataTable.module.css */
+.tableWrapper {
+  overflow-x: auto; /* ทำให้ตารางเลื่อนซ้ายขวาได้บนจอเล็ก */
+}
+
+.dataTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.dataTable th,
+.dataTable td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.dataTable th {
+  font-weight: 600;
+  background-color: #f9fafb;
+  color: #374151;
+}
+
+.dataTable tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.dataTable tbody tr:hover {
+  background-color: #f0f7ff;
+}

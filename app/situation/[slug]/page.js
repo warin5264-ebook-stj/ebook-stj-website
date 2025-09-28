@@ -1,32 +1,29 @@
 // app/situation/[slug]/page.js
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import StatCard from '@/components/widgets/StatCard';
-import styles from './dashboard-display.module.css';
-import { kv } from '@vercel/kv';
-import initialData from '@/data/dashboards.json';
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import dashboardsData from "@/data/dashboards.json";
+import { notFound } from "next/navigation";
+import StatCard from "@/components/widgets/StatCard";
+import DataTable from "@/components/widgets/DataTable";
+import BarChart from "@/components/widgets/BarChart";
+import styles from "./dashboard-display.module.css";
 
-// --- ย้ายการดึงข้อมูลมาไว้บน Server ---
-async function getDashboardData(slug) {
-  try {
-    const data = await kv.get('dashboards_data');
-    if (data && data[slug]) {
-      return data[slug];
-    }
-    // ถ้าไม่มีใน KV ให้ใช้ข้อมูลเริ่มต้น
-    return initialData[slug] || null;
-  } catch (error) {
-    console.error("Failed to fetch dashboard data", error);
-    return null;
-  }
-}
-
-export default async function DashboardDisplayPage({ params }) {
+export default function DashboardDisplayPage({ params }) {
   const { slug } = params;
-  const data = await getDashboardData(slug);
+  const data = dashboardsData[slug];
 
   if (!data) {
-    return <div>Could not load dashboard data.</div>;
+    notFound();
+  }
+
+  // --- คำนวณข้อมูลสำหรับตาราง registration ---
+  if (slug === 'registration') {
+    data.tables.forEach(table => {
+      table.rows = table.rows.map(row => ({
+        ...row,
+        total: row.new + row.relapse // สร้างคอลัมน์ "รวม"
+      }));
+    });
   }
 
   return (
@@ -34,26 +31,18 @@ export default async function DashboardDisplayPage({ params }) {
       <Header />
       <main className={styles.main}>
         <div className={styles.container}>
-          <h1>{data.title}</h1>
-          <div className={styles.kpiContainer}>
-            <StatCard title={data.kpi.label} value={data.kpi.value} unit={data.kpi.unit} />
+          <div className={styles.header}>
+            <h1 className={styles.mainTitle}>{data.mainTitle}</h1>
+            <h2 className={styles.subtitle}>ปีงบประมาณ {data.fiscalYear} จังหวัดอุบลราชธานี</h2>
           </div>
-          <div className={styles.tableContainer}>
-            <table>
-              <thead>
-                <tr>
-                  {data.table.headers.map(header => <th key={header}>{header}</th>)}
-                </tr>
-              </thead>
-              <tbody>
-                {data.table.rows.map((row, index) => (
-                  <tr key={index}>
-                    {Object.values(row).map((cell, cellIndex) => <td key={cellIndex}>{cell}</td>)}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+          
+          
+
+          {data.charts.map((chart, index) => (
+            <div key={index} className={styles.widgetContainer}>
+              {chart.type === 'bar' && <BarChart chartData={chart} />}
+            </div>
+          ))}
         </div>
       </main>
       <Footer />
