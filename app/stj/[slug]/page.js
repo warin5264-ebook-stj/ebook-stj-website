@@ -45,6 +45,18 @@ export default function STJDynamicPage({ params }) {
         <Header />
         <main className={styles.main}>
           <div className={styles.container}>
+             {/* --- เพิ่มส่วนแสดงรูปภาพ Banner --- */}
+            {data.categoryImage && (
+              <div className={styles.categoryBanner}>
+                <Image
+                  src={data.categoryImage}
+                  alt={data.title}
+                  fill
+                  style={{ objectFit: 'contain' }}
+                  priority
+                />
+              </div>
+            )}
             <div className={styles.category}>
               <h2>{data.letter} - {data.title}</h2>
               <ul>

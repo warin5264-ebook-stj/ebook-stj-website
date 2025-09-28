@@ -1,5 +1,6 @@
 {
   "s": {
+    "categoryImage": "/images/stj/category-s-banner.png",
     "title": "วัณโรคและการค้นหาวัณโรค",
     "topics": [
       { 
@@ -47,6 +48,7 @@
 
 
   "t": {
+    "categoryImage": "/images/stj/category-t-banner.png",
     "title": "การรักษาวัณโรค",
     "topics": [
       { "slug": "self-care",
@@ -86,6 +88,7 @@
   },
 
   "j": {
+    "categoryImage": "/images/stj/category-j-banner.png",
     "title": "การดูแลผู้ป่วยวัณโรคในชุมชน",
     "topics": [
       { "slug": "tb-prevention",
