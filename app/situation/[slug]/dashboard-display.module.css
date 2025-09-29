@@ -1,52 +1,54 @@
 /* app/situation/[slug]/dashboard-display.module.css */
 .main { 
-  padding: 4rem 2rem; 
-  background-color: #f9f9f9; 
+  padding: 2rem; 
+  background-color: #f0f2f5; 
 }
 
 .container { 
-  max-width: 1200px; /* <-- (แนะนำ) เพิ่มความกว้างสูงสุดเพื่อให้เต็มจอมากขึ้น */
+  max-width: 1400px; 
   margin: 0 auto; 
 }
 
-.mainTitle {
-  font-size: 2.5rem;
+.header {
   text-align: center;
+  margin-bottom: 2rem;
+}
+
+.mainTitle {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .subtitle {
-  font-size: 1.5rem;
-  text-align: center;
+  font-size: 1.2rem;
   color: #555;
-  margin-top: -1rem;
-  margin-bottom: 3rem;
+  font-weight: 400;
 }
 
-.tableContainer { 
-  overflow-x: auto;
+/* --- 1. เปลี่ยนชื่อ kpiGrid เป็น statCards และใช้ Flexbox --- */
+.statCards {
+  display: flex;
+  flex-wrap: wrap; /* ทำให้ขึ้นบรรทัดใหม่บนจอเล็ก */
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  justify-content: center; /* จัดให้อยู่ตรงกลาง */
 }
 
-.dataTable { 
-  width: 100%; 
-  border-collapse: collapse; 
-  font-size: 1rem;
+/* --- 2. สไตล์สำหรับ Widget Container ทั่วไป --- */
+.widgetContainer {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  border: 1px solid #eee;
+  margin-bottom: 2rem; /* เพิ่มระยะห่างระหว่าง Widget */
 }
 
-.dataTable th, .dataTable td { 
-  border-bottom: 1px solid #eee; 
-  padding: 1rem; 
-  text-align: left; 
-}
-
-.dataTable th { 
-  font-weight: 600; 
-  background-color: #fafafa;
-}
-
-.dataTable tbody tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-.dataTable tbody tr:hover {
-  background-color: #f0f7ff;
+/* --- 3. สไตล์สำหรับหัวข้อตาราง --- */
+.tableTitle {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
 }

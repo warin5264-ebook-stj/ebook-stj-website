@@ -3,11 +3,11 @@
     "title": "การเอ็กซเรย์ปอด",
     "mainTitle": "รายงานการค้นหาผู้ป่วยวัณโรครายใหม่ในกลุ่มเสี่ยงโดยวิธีถ่ายภาพรังสีทรวงอก (Chest X-ray)",
     "fiscalYear": "2568",
-    "kpis": [
-      { "label": "เป้าหมาย (คน)", "value": "95,342" },
-      { "label": "ผลงาน (คน)", "value": "113,555" },
-      { "label": "ร้อยละ", "value": "119.1", "unit": "%" }
-    ],
+    "statCards": [
+    { "title": "เป้าหมาย (คน)", "value": "95,342" },
+    { "title": "ผลงาน (คน)", "value": "113,555" },
+    { "title": "ร้อยละ(%)", "value": "119.1" }
+  ],
     "charts": [
       {
         "type": "bar",
@@ -53,10 +53,11 @@
     "title": "การขึ้นทะเบียน",
     "mainTitle": "รายงานการขึ้นทะเบียนผู้ป่วยวัณโรค",
     "fiscalYear": "2568",
-    "kpis": [
-      { "label": "ขึ้นทะเบียนใหม่", "value": "1,234", "unit": "คน" },
-      { "label": "กลับมาเป็นซ้ำ", "value": "89", "unit": "คน" }
-    ],
+    "statCards": [
+    { "title": "เป้าหมาย (คน)", "value": "2906" },
+    { "title": "ผลงาน (คน)", "value": "1914" },
+    { "title": "ร้อยละ(%)", "value": "65.9" }
+  ],
     "charts": [
       {
         "type": "bar",
@@ -102,10 +103,11 @@
     "title": "การรักษา",
     "mainTitle": "รายงานผลการรักษาผู้ป่วยวัณโรค",
     "fiscalYear": "2568",
-    "kpis": [
-      { "label": "อัตราสำเร็จการรักษา", "value": "85.7", "unit": "%" },
-      { "label": "กำลังรักษา", "value": "550", "unit": "คน" }
-    ],
+    "statCards": [
+    { "title": "เป้าหมาย (คน)", "value": "313" },
+    { "title": "ผลงาน (คน)", "value": "281" },
+    { "title": "ร้อยละ(%)", "value": "89.8" }
+  ],
     "charts": [
       {
         "type": "bar",
@@ -131,9 +133,9 @@
           { "label": "สว่างวีระวงศ์", "percentage": 100 },
           { "label": "เดชอุดม", "percentage": 90 },
           { "label": "น้ำยืน", "percentage": 100 },
-          { "label": "บุณฑริก", "percentage": 32.0 },
-          { "label": "พิบูลมังสาหาร", "percentage": 60.1 },
-          { "label": "นาเยีย", "percentage": 32.6 },
+          { "label": "บุณฑริก", "percentage": 100 },
+          { "label": "พิบูลมังสาหาร", "percentage": 90.9 },
+          { "label": "นาเยีย", "percentage": 100 },
           { "label": "ดอนมดแดง", "percentage": 100 },
           { "label": "นาจะหลวย", "percentage": 80 },
           { "label": "น้ำขุ่น", "percentage": 80 },

@@ -35,6 +35,17 @@ export default function DashboardDisplayPage({ params }) {
             <h1 className={styles.mainTitle}>{data.mainTitle}</h1>
             <h2 className={styles.subtitle}>ปีงบประมาณ {data.fiscalYear} จังหวัดอุบลราชธานี</h2>
           </div>
+          <div className={styles.statCards}>
+            {data.statCards.map((card, index) => (
+              <StatCard key={index} title={card.title} value={card.value} unit={card.unit} />
+            ))}
+          </div>
+          {data.tables && data.tables.map((table, index) => (
+            <div key={index} className={styles.widgetContainer}>
+              <h3 className={styles.tableTitle}>{table.title}</h3>
+              <DataTable columns={table.columns} rows={table.rows} />
+            </div>
+          ))}
           
           
 
