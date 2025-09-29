@@ -28,9 +28,14 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
         <div className={styles.info}>
-          <h4>E-Book STJ Model</h4>
-          <p>โครงการเฝ้าระวัง ป้องกัน และควบคุมวัณโรค</p>
-          <p>© {currentYear} สำนักงานสาธารณสุขจังหวัด (สสจ.)</p>
+          <h4>E-Book STJ TB Model</h4>
+          <p>กลุ่มงานควบคุมโรคติดต่อ</p>
+          <p>© {currentYear} สำนักงานสาธารณสุข จังหวัดอุบลฯ (สสจ.)</p>
+          <p className={styles.footerLink}>
+            <a href="https://www.tbthailand.org/" target="_blank" rel="noopener noreferrer">
+              เว็บไซต์กองวัณโรค คลิกที่นี่
+            </a>
+          </p>
           
           <div className={styles.visitorCounter}>
             <p>จำนวนผู้เข้าชมเว็บไซต์: {visitorCount > 0 ? visitorCount.toLocaleString() : '...'}</p>

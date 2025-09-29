@@ -11,9 +11,10 @@
     "charts": [
       {
         "type": "bar",
-        "title": "อัตราการคัดกรองวัณโรครายอำเภอ (คิดเป็นร้อยละ)",
         "xLabel": "อำเภอ/โรงพยาบาล",
         "yLabel": "ร้อยละ (%)",
+        "goal": 90, 
+        "source": "ที่มา : https://ntip.ddc.moph.go.th/ ดึงข้อมูล ณ วันที่ 22 กันยายน 68 เวลา 08.40 น.",
         "items": [
           { "label": "รพ.๕๐พรรษา ฯ", "percentage": 154.1 },
           { "label": "เชื่องใน", "percentage": 118.4 },
@@ -40,8 +41,10 @@
           { "label": "น้ำขุ่น", "percentage": 95.3 },
           { "label": "เหล่าเสือโก้ก", "percentage": 93.7 },
           { "label": "ตระการพืชผล", "percentage": 92.3 },
-          { "label": "ทุ่งศรีอุดม", "percentage": 90.8 }
+          { "label": "ทุ่งศรีอุดม", "percentage": 90.8 },
+          { "label": "รวม", "percentage": 119.1 }
         ]
+        
       }
     ],
     "tables": []
@@ -59,6 +62,8 @@
         "type": "bar",
         "title": "อัตราการขึ้นทะเบียนผู้ป่วยวัณโรค (คิดเป็นร้อยละ)",
         "yLabel": "ร้อยละ (%)",
+        "goal": 85, 
+        "source": "ที่มา : https://ntip.ddc.moph.go.th/ วันที่ 22 กันยายน 2568 เวลา 10.30 น.",
         "items": [
           { "label": "รพ.๕๐พรรษา ฯ", "percentage": 53.5 },
           { "label": "เชื่องใน", "percentage": 51.8 },
@@ -86,7 +91,8 @@
           { "label": "เหล่าเสือโก้ก", "percentage": 22.1 },
           { "label": "ตระการพืชผล", "percentage": 45.0 },
           { "label": "รพ.ค่ายสรรพสิทธิประสงค์", "percentage": 245.5 },
-          { "label": "ทุ่งศรีอุดม", "percentage": 30.4 }
+          { "label": "ทุ่งศรีอุดม", "percentage": 30.4 },
+          { "label": "รวม", "percentage": 65.9 }
         ]
       }
     ],
@@ -105,6 +111,8 @@
         "type": "bar",
         "title": "ผลลัพธ์การรักษา",
         "yLabel": "จำนวน (คน)",
+        "goal": 88, 
+        "source": "ที่มา : https://ntip.ddc.moph.go.th/ ดึงข้อมูล ณ วันที่ 22 กันยายน 2568 เวลา 09.30 น.",
         "items": [
           { "label": "รพ.๕๐พรรษา ฯ", "percentage": 94.7 },
           { "label": "เชื่องใน", "percentage": 80.0 },
@@ -132,7 +140,8 @@
           { "label": "เหล่าเสือโก้ก", "percentage": 100 },
           { "label": "ตระการพืชผล", "percentage": 84.6 },
           { "label": "รพ.ค่ายสรรพสิทธิประสงค์", "percentage": 80 },
-          { "label": "ทุ่งศรีอุดม", "percentage": 100 }
+          { "label": "ทุ่งศรีอุดม", "percentage": 100 },
+          { "label": "รวม", "percentage": 89.8 }
         ]
       }
     ],

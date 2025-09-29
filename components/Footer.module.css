@@ -49,3 +49,13 @@
   font-size: 0.9rem;
   color: #9ca3af; /* สีเทาจางๆ */
 }
+.footerLink a {
+  color: #9ca3af;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footerLink a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
