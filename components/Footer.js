@@ -29,8 +29,9 @@ const Footer = () => {
       <div className={styles.footerContent}>
         <div className={styles.info}>
           <h4>E-Book STJ TB Model</h4>
-          <p>กลุ่มงานควบคุมโรคติดต่อ</p>
-          <p>© {currentYear} สำนักงานสาธารณสุข จังหวัดอุบลฯ (สสจ.)</p>
+          <p>การพัฒนารูปแบบการเฝ้าระวัง ป้องกัน ควบคุมวัณโรค STJ TB Model จังหวัดอุบลราชธานี</p>
+          <p>© {currentYear} กลุ่มงานควบคุมโรคติดต่อสำนักงานสาธารณสุข จังหวัดอุบลราชธานี (สสจ.)</p>
+          <p>นายกฤศวิสุทธิ์ ธีวสุเกิดมงคล นักสาธารณสุขชำนาญการ</p>
           <p className={styles.footerLink}>
             <a href="https://www.tbthailand.org/" target="_blank" rel="noopener noreferrer">
               เว็บไซต์กองวัณโรค คลิกที่นี่
