@@ -117,5 +117,8 @@
         ]
       }
     ]
-  }
+  },
+  "images": [
+          "/images/stj/community-care1.png"
+        ]
 }

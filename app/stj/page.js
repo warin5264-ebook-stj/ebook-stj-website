@@ -1,4 +1,5 @@
 // app/stj/page.js
+import Image from 'next/image'; 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import styles from "./stj.module.css";
@@ -12,7 +13,10 @@ export default function STJPage() {
         <div className={styles.container}>
           <h1 className={styles.mainTitle}>STJ TB Model</h1>
           <p className={styles.description}>
-            STJ TB model คือ รูปแบบการเฝ้าระวัง ป้องกัน ควบคุมวัณโรค ที่พัฒนาขึ้นเพื่อตอบสนองต่อสถานการณ์วัณโรคในพื้นที่จังหวัดอุบลราชธานี โมเดลนี้เน้นการมีส่วนร่วมของชุมชน หน่วยงานสาธารณสุขทุกระดับ และภาคีเครือข่ายทุกภาคส่วน เพื่อให้การค้นหาผู้ป่วยและการดูแลผู้ป่วยวัณโรคเป็นไปอย่างมีคุณภาพ และประสิทธิภาพ
+            STJ TB model คือ รูปแบบการเฝ้าระวัง ป้องกัน ควบคุมวัณโรค 
+            ที่พัฒนาขึ้นเพื่อตอบสนองต่อสถานการณ์วัณโรคในพื้นที่จังหวัดอุบลราชธานี 
+            โมเดลนี้เน้นการมีส่วนร่วมของชุมชน หน่วยงานสาธารณสุขทุกระดับ และภาคีเครือข่ายทุกภาคส่วน 
+            เพื่อให้การค้นหาผู้ป่วยและการดูแลผู้ป่วยวัณโรคเป็นไปอย่างมีคุณภาพ และประสิทธิภาพ
           </p>
           
           {/* --- แสดง ButtonGrid ที่เรียกใช้ปุ่มชุดใหม่ --- */}
@@ -20,9 +24,19 @@ export default function STJPage() {
             
             <ButtonGrid buttonIds={[18, 19, 20]} /> 
           </div>
+          <div className={styles.categoryImageContainer}>
+            <Image
+              src="/images/stj/stj_banner.png" // ตัวอย่างการใช้ภาพ Category S
+              alt="Category S Banner"
+              width={500}
+              height={300}
+              layout="responsive"
+            />
+          </div>
 
           {/* --- เราได้ลบส่วนสารบัญ S, T, J ออกจากหน้านี้แล้ว --- */}
         </div>
+        
       </main>
       <Footer />
     </div>
