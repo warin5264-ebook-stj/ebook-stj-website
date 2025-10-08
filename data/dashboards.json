@@ -5,8 +5,8 @@
     "fiscalYear": "2568",
     "statCards": [
       { "title": "เป้าหมาย (คน)", "value": "95,342" },
-      { "title": "ผลงาน (คน)", "value": "113,555" },
-      { "title": "ร้อยละ(%)", "value": "119.1" }
+      { "title": "ผลงาน (คน)", "value": "120,000" },
+      { "title": "ร้อยละ(%)", "value": "130.1" }
   ],
     "charts": [
       {
@@ -16,7 +16,7 @@
         "goal": 90, 
         "source": "ที่มา : https://ntip.ddc.moph.go.th/ ดึงข้อมูล ณ วันที่ 22 กันยายน 68 เวลา 08.40 น.",
         "items": [
-          { "label": "กุดข้าวปุ้น", "percentage": 101.8 },
+          { "label": "กุดข้าวปุ้น", "percentage": 120 },
           { "label": "ดอนมดแดง", "percentage": 97.3 },
           { "label": "ตระการพืชผล", "percentage": 92.3 },
           { "label": "ตาลสุม", "percentage": 100 },
