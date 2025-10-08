@@ -13,7 +13,7 @@
         "type": "bar",
         "xLabel": "อำเภอ/โรงพยาบาล",
         "yLabel": "ร้อยละ (%)",
-        "goal": 90, 
+        "goal": 130, 
         "source": "ที่มา : https://ntip.ddc.moph.go.th/ ดึงข้อมูล ณ วันที่ 22 กันยายน 68 เวลา 08.40 น.",
         "items": [
           { "label": "กุดข้าวปุ้น", "percentage": 120 },
